@@ -1,5 +1,5 @@
-int row=matrix.size(),col=matrix[0].size();
-        vector<vector<int> >dp(row,vector<int>(col,INT_MAX));
+        int row=matrix.size(),col=matrix[0].size();
+        vector<vector<int> >dp(row, vector<int>(col,INT_MAX));
         for(int times=0;times<=1;times++)
             for(int i=times?row-1:0;times?i>=0:i<row;times?i--:i++)
                 for(int j=times?col-1:0;times?j>=0:j<col;times?j--:j++)
