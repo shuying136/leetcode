@@ -1,4 +1,7 @@
-        int row=matrix.size(),col=matrix[0].size();
+// 属于线性dp，从左上角到右下角，再从右下角到左上角更新距离
+
+
+int row=matrix.size(),col=matrix[0].size();
         vector<vector<int> >dp(row, vector<int>(col,INT_MAX));
         for(int times=0;times<=1;times++)
             for(int i=times?row-1:0;times?i>=0:i<row;times?i--:i++)
